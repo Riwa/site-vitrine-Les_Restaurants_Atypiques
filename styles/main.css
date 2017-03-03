@@ -1,0 +1,38 @@
+body{
+font-family: 'Open Sans', sans-serif;
+}
+
+.circle {
+  background:#ff8500;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  border-radius: 100%;
+	margin-bottom: 20px;
+}
+
+.circle p{
+	text-align: center;
+  width: 200px;
+  height: 200px;
+	line-height: 200px;	
+}
+
+.circle p span{
+	width: 100px;
+	padding: 10px;
+	vertical-align: middle;
+	display: inline-block;
+	line-height: 1.2;
+	text-align: center;
+}
+
+.circle .numbers{
+	font-size:20px;
+}
+
+@media screen and (max-width: 768px) {
+	.circle-width{
+		width: 100% !important;
+	}
+}
