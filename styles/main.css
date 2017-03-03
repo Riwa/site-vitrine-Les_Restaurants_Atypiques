@@ -113,6 +113,16 @@ h3 {
 		text-align: center;
 	}
 
+	footer a {
+		color: #FFF;
+		text-decoration: none;
+	}
+
+	footer a:hover {
+		color:#FFF;
+		text-decoration: underline;
+	}
+
 	footer ul {
 		padding: 0;
 		list-style: none;
@@ -240,6 +250,10 @@ h3 {
 		text-align: center;
 	}
 
+	footer h3 {
+		margin-bottom: 30px;
+	}
+
 	footer ul {
 		padding: 0;
 		list-style: none;
@@ -255,6 +269,8 @@ h3 {
 
 	.newsletterForm input {
 		border-radius: 0;
+		width: 80%;
+		float: left;
 	}
 
 	.btn-orange {
@@ -286,6 +302,16 @@ h3 {
 
 	.footerLinks li {
 		display: inline;
+	}
+
+		footer a {
+		color: #FFF;
+		text-decoration: none;
+	}
+
+	footer a:hover {
+		color:#FFF;
+		text-decoration: underline;
 	}
 }
 
