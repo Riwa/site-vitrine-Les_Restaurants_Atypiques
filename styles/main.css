@@ -17,10 +17,15 @@
 
 html, body {
 	height: 100%;
+	font-family: 'Open Sans', sans-serif;
 }
 
 .slideshowBkg {
 	height: 100%;
+}
+
+h3 {
+	font-family: 'intro_head_rbase';
 }
 
 
@@ -42,6 +47,7 @@ html, body {
 		background-color:#292929;
 		color: #FFF;
 		position: fixed;
+		z-index: 5;
 		width: 100%;
 		height: 100%;
 		bottom:-1000px;
@@ -74,14 +80,8 @@ html, body {
 		color:#FF8500; 
 	}
 
-	nav ul {
-		/*position: relative;
-		top: 50%;
-		transform: translateY(-50%);*/
-	}
-
 	nav img {
-		margin-top:100px;
+		margin-top:75px;
 		margin-bottom: 30px;
 	}
 
@@ -105,6 +105,61 @@ html, body {
 	#menuButton div + div {
 		margin: 5px 0;
 	}
+
+		footer {
+		background-color:#262626;
+		color: #FFF;
+		width: 100%;
+		text-align: center;
+	}
+
+	footer ul {
+		padding: 0;
+		list-style: none;
+	}
+
+	.listRestaurants, .socialNetworks, .newsletterForm {
+		margin-top: 50px;
+	}
+
+	.newsletterForm {
+		text-align: center;
+	}
+
+	.newsletterForm input {
+		border-radius: 0;
+	}
+
+	.btn-orange {
+		background-color: #FF8500;
+		border-radius: 0;
+	}
+
+	.socialNetworks ul li, .socialNetworks ul li a {
+		display: inline-block;
+		width: 64px;
+		height: 64px;
+	}
+
+	.socialNetworks ul li::nth-child(2) {
+		margin: 0 10px;
+	}
+
+	#facebook {
+		background-image: url(../images/facebook.png);
+	}
+
+	#twitter {
+		background-image: url(../images/twitter.png);
+	}
+
+	#instagram {
+		background-image: url(../images/instagram.png);
+	}
+
+	.footerLinks li {
+		display: inline;
+	}
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -116,5 +171,132 @@ html, body {
 }
 
 @media (min-width: 1200px) {
+	/* HEADER ET NAVIGATION */
 
+	header {
+		background-color: #fff;
+		background-image: url(../images/logo-header.png);
+		background-repeat: no-repeat;
+		background-position: 15px 10px;
+		width: 100%;
+		height: 115px;
+		line-height: 115px;
+		margin-top: 30px;
+	}
+
+	nav {
+		float: right;
+		text-align: center;
+		width:80%;
+	}
+
+	#navClose {
+		display: none;
+	}
+
+	nav ul {
+		padding: 0;
+	}
+
+	nav ul li {
+		text-align: center;
+		font-size:18px;
+		display: inline-block;
+		width: 33%
+	}
+
+	nav ul li a, nav ul li a:hover {
+		color: #000;
+		text-decoration: none;
+	}
+
+	nav ul li a#franchise {
+		color:#FF8500; 
+	}
+
+	nav img {
+		display: none;
+	}
+
+	.navOpen {
+		bottom:0
+	}
+
+
+	#menuButton {
+		display: none;
+	}
+
+	#menuButton div + div {
+		margin: 5px 0;
+	}
+
+
+
+	footer {
+		background-color:#262626;
+		color: #FFF;
+		width: 100%;
+		text-align: center;
+	}
+
+	footer ul {
+		padding: 0;
+		list-style: none;
+	}
+
+	.listRestaurants, .socialNetworks, .newsletterForm {
+		vertical-align: top;
+	}
+
+	.newsletterForm {
+		text-align: center;
+	}
+
+	.newsletterForm input {
+		border-radius: 0;
+	}
+
+	.btn-orange {
+		background-color: #FF8500;
+		border-radius: 0;
+	}
+
+	.socialNetworks ul li, .socialNetworks ul li a {
+		display: inline-block;
+		width: 64px;
+		height: 64px;
+	}
+
+	.socialNetworks ul li::nth-child(2) {
+		margin: 0 10px;
+	}
+
+	#facebook {
+		background-image: url(../images/facebook.png);
+	}
+
+	#twitter {
+		background-image: url(../images/twitter.png);
+	}
+
+	#instagram {
+		background-image: url(../images/instagram.png);
+	}
+
+	.footerLinks li {
+		display: inline;
+	}
+}
+
+/*JS*/
+
+.smaller {
+	height: 65px;
+	position: fixed;
+	margin-top:0;
+	left:0;
+	top:0;
+	line-height: 65px;
+	background-position: 0 -15px;
 }
