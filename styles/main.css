@@ -65,6 +65,42 @@ h2{
 		margin-top: 250px;
 	}
 }
+/*troisieme partie sur nos services*/
+.our-services{
+	margin-bottom: 80px;
+}
+
+.our-services p{
+	padding:0px 20px 0px 20px;
+	text-align: justify; 
+}
+
+.our-services img{
+	width:100%;
+}
+
+.icon-bootstrap{
+	top:20px;
+	color:#ff8500;
+}
+
+#first-icon{
+	padding-top:30px;
+}
+
+.width-picture{
+	padding: 0px !important;
+}
+
+#paragraphe-concept{
+	text-align: center !important;
+}
+
+.btn-quisommesnous{
+    font-family: 'intro_head_rbase';
+    color: #FFF;
+    font-size: 24px;
+}
 
 /* IMPORT FONTS */
 @font-face {
