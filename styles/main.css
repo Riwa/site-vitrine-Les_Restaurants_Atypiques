@@ -1,7 +1,7 @@
 .circle {
-  background:#ff8500;
-  width: 200px;
-  height: 200px;
+  background:#ffd578;
+  width: 300px;
+  height: 300px;
   margin: auto;
   border-radius: 100%;
 	margin-bottom: 20px;
@@ -9,18 +9,18 @@
 
 .circle p{
 	text-align: center;
-  width: 200px;
-  height: 200px;
-	line-height: 200px;	
+  width: 300px;
+  height: 300px;
+	line-height: 300px;	
 }
 
 .circle p span{
 	width: 100px;
-	padding: 10px;
 	vertical-align: middle;
 	display: inline-block;
 	line-height: 1.2;
 	text-align: center;
+	font-size: 20px;
 }
 
 .circle .numbers{
@@ -48,6 +48,10 @@ h2{
 
 .concept h2{
 	padding-bottom: 20px;
+}
+
+.numbers-key{
+	margin-top:80px;
 }
 
 @media screen and (max-width: 768px) {
