@@ -31,8 +31,37 @@ font-family: 'Open Sans', sans-serif;
 	font-size:20px;
 }
 
+.concept{
+	height: 100%;
+	width: 100% !important;
+	margin-top:50px;
+}
+
+.concept img{
+	width:100%;
+}
+
+.concept p{
+	padding: 20px;
+	text-align: justify; 
+}
+
+h2{
+	text-align: center;
+}
+
+.concept h2{
+	padding-bottom: 20px;
+}
+
 @media screen and (max-width: 768px) {
 	.circle-width{
 		width: 100% !important;
+	}
+}
+
+@media screen and (max-width: 768px){
+	.concept p{
+		margin-top: 250px;
 	}
 }
