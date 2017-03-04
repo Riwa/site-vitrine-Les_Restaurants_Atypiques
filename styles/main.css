@@ -96,10 +96,130 @@ h2{
 	text-align: center !important;
 }
 
-.btn-quisommesnous{
+.btn-pages{
     font-family: 'intro_head_rbase';
     color: #FFF;
     font-size: 24px;
+}
+
+.research{
+	background-color: #E5E5E5;
+	height: auto;
+}
+
+.background-size{
+	width:100%;
+	padding:10px 40px 40px 40px;
+}
+
+.research img{
+	width:100%;
+}
+
+#intro{
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+/* Contact form */
+
+.btn-form{
+	width: 100%;
+}
+
+.wrap{
+	width: 100%;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+.box{
+	font-size: 1.2em;
+	line-height: 1.6em;
+  text-align: center;
+}
+
+@media all and (max-width: 1180px){
+	.wrap{
+	width: 100%;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	}
+}
+
+.contact-form {
+  width: 50%;
+  margin: 0 auto;
+}
+.contact-form .input-block {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  height: 60px;
+  border-bottom: 2px solid #1A1A1A;
+  margin: 0;
+  position: relative;
+  margin-bottom: 20px;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.contact-form .input-block.textarea {
+  height: auto;
+}
+.contact-form .input-block.textarea .form-control {
+  height: auto;
+  resize: none;
+}
+.contact-form .input-block label {
+  position: absolute;
+  left: 10px;
+  top: 25px;
+  display: block;
+  margin: 0;
+  font-weight: 400;
+  z-index: 1;
+  color: #aaa;
+  font-size: 18px;
+  line-height: 18px;
+}
+.contact-form .input-block .form-control {
+  background-color: transparent;
+  margin: 0;
+  border: none;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  height: auto;
+  padding: 30px 10px;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  font-size: 18px;
+}
+
+@media (min-width: 768px) {
+  .contact-wrap {
+    margin: auto;
+  }
+}
+@media (max-width: 868px) {
+	.contact-form {
+	  width: 100%;
+	  padding: 40px;
+	}
+}
+@media (max-width: 568px) {
+	.contact-form {
+	  padding: 10px;
+	}
 }
 
 /* IMPORT FONTS */
@@ -133,6 +253,10 @@ h3 {
 	font-family: 'intro_head_rbase';
 }
 
+.btn-orange {
+	background-color: #FF8500;
+	border-radius: 0;
+}
 
 @media (max-width: 768px) {
 	header {
@@ -242,11 +366,6 @@ h3 {
 	}
 
 	.newsletterForm input {
-		border-radius: 0;
-	}
-
-	.btn-orange {
-		background-color: #FF8500;
 		border-radius: 0;
 	}
 
@@ -418,11 +537,6 @@ h3 {
 		border-radius: 0;
 		width: 80%;
 		float: left;
-	}
-
-	.btn-orange {
-		background-color: #FF8500;
-		border-radius: 0;
 	}
 
 	.socialNetworks ul li, .socialNetworks ul li a {
