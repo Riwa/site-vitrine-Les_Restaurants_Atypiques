@@ -315,7 +315,7 @@ h3 {
 	}
 
 	.navOpen {
-		bottom:0
+		bottom:0;
 	}
 
 
@@ -506,8 +506,6 @@ h3 {
 	#menuButton div + div {
 		margin: 5px 0;
 	}
-
-
 
 	footer {
 		background-color:#262626;
