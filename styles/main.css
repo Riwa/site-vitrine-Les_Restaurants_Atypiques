@@ -521,7 +521,7 @@ h3 {
 
 	.opened {
 		bottom:0;
-
+	}
 	/*JS*/
 
 .smaller {
@@ -817,6 +817,5 @@ h3 {
 	box-shadow: 0px 5px 10px 0px #656565;
 	filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=180, Strength=10);
 	}
-}
 
 
