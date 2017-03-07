@@ -367,6 +367,7 @@ h3 {
 	footer h1 {
 		font-family: 'intro_head_rbase';
 		display: inline-block;
+		text-transform: uppercase;
 	}
 
 	footer h1 span {
@@ -625,6 +626,7 @@ h3 {
 		display: inline-block;
 		width: 100%;
 		border-bottom:3px solid #fff;
+		text-transform: uppercase;
 	}
 
 	footer h1 span {
