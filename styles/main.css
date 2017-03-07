@@ -107,6 +107,13 @@ h3 {
 		margin: 5px 0;
 	}
 
+	.pageTitle {
+	height: 50%;
+	background-image: url(../images/01.jpg);
+	background-size: cover;
+	background-position: center center;
+}
+
 		footer {
 		background-color:#262626;
 		color: #FFF;
@@ -219,6 +226,12 @@ h3 {
 	.mapRestaurants {
 		width: 100%;
 		height: 500px;
+		margin: 50px 0;
+	}
+
+	.nosRestaurantsIntro {
+		text-align: center;
+		margin-top:50px;
 	}
 
 	#ficheClose {
@@ -335,7 +348,6 @@ h3 {
 		background-image: url(../images/01.jpg);
 		background-size: cover;
 		background-position: center center;
-		margin-bottom: 30px;
 	}
 
 
@@ -457,6 +469,12 @@ h3 {
 	.mapRestaurants {
 		width: 100%;
 		height: 500px;
+		margin: 50px 0;
+	}
+
+		.nosRestaurantsIntro {
+		text-align: center;
+		margin-top: 50px;
 	}
 
 	#ficheClose {
