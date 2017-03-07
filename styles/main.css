@@ -375,8 +375,8 @@ h3 {
 
 	footer h1::before {
 		content: url(../images/logo-notext.png);
-		display: inline-block;
-		vertical-align: middle;
+		display: block;
+		height: 100px;
 	}
 
 	footer ul {
@@ -623,6 +623,8 @@ h3 {
 	footer h1 {
 		font-family: 'intro_head_rbase';
 		display: inline-block;
+		width: 100%;
+		border-bottom:3px solid #fff;
 	}
 
 	footer h1 span {
