@@ -15,6 +15,7 @@
     "tests"
   ],
   "dependencies": {
-    "gmaps": "^0.4.25"
+    "gmaps": "^0.4.25",
+    "vegas": "^2.4.0"
   }
 }

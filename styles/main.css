@@ -1,3 +1,227 @@
+.circle {
+  background:#ffd578;
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  border-radius: 100%;
+	margin-bottom: 20px;
+}
+
+.circle p{
+	text-align: center;
+  width: 300px;
+  height: 300px;
+	line-height: 300px;	
+}
+
+.circle p span{
+	width: 100px;
+	vertical-align: middle;
+	display: inline-block;
+	line-height: 1.2;
+	text-align: center;
+	font-size: 20px;
+}
+
+.circle .numbers{
+	font-size:20px;
+}
+
+.concept{
+	height: 100%;
+	width: 100% !important;
+	margin-top:50px;
+}
+
+.concept img{
+	width:100%;
+}
+
+.concept p{
+	padding: 20px;
+	text-align: justify; 
+}
+
+h2{
+	text-align: center;
+}
+
+.concept h2{
+	padding-bottom: 20px;
+}
+
+.numbers-key{
+	margin-top:80px;
+}
+
+@media screen and (max-width: 768px) {
+	.circle-width{
+		width: 100% !important;
+	}
+}
+
+@media screen and (max-width: 768px){
+	.concept p{
+		margin-top: 250px;
+	}
+}
+/*troisieme partie sur nos services*/
+.our-services{
+	margin-bottom: 80px;
+}
+
+.our-services p{
+	padding:0px 20px 0px 20px;
+	text-align: justify; 
+}
+
+.our-services img{
+	width:100%;
+}
+
+.icon-bootstrap{
+	top:20px;
+	color:#ff8500;
+}
+
+#first-icon{
+	padding-top:30px;
+}
+
+.width-picture{
+	padding: 0px !important;
+}
+
+#paragraphe-concept{
+	text-align: center !important;
+}
+
+.btn-pages{
+    font-family: 'intro_head_rbase';
+    color: #FFF;
+    font-size: 24px;
+}
+
+.research{
+	background-color: #E5E5E5;
+	height: auto;
+}
+
+.background-size{
+	width:100%;
+	padding:10px 40px 40px 40px;
+}
+
+.research img{
+	width:100%;
+}
+
+#intro{
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+/* Contact form */
+
+.btn-form{
+	width: 100%;
+}
+
+.wrap{
+	width: 100%;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+.box{
+	font-size: 1.2em;
+	line-height: 1.6em;
+  text-align: center;
+}
+
+@media all and (max-width: 1180px){
+	.wrap{
+	width: 100%;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	}
+}
+
+.contact-form {
+  width: 50%;
+  margin: 0 auto;
+}
+.contact-form .input-block {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  height: 60px;
+  border-bottom: 2px solid #1A1A1A;
+  margin: 0;
+  position: relative;
+  margin-bottom: 20px;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.contact-form .input-block.textarea {
+  height: auto;
+}
+.contact-form .input-block.textarea .form-control {
+  height: auto;
+  resize: none;
+}
+.contact-form .input-block label {
+  position: absolute;
+  left: 10px;
+  top: 25px;
+  display: block;
+  margin: 0;
+  font-weight: 400;
+  z-index: 1;
+  color: #aaa;
+  font-size: 18px;
+  line-height: 18px;
+}
+.contact-form .input-block .form-control {
+  background-color: transparent;
+  margin: 0;
+  border: none;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  height: auto;
+  padding: 30px 10px;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  font-size: 18px;
+}
+
+@media (min-width: 768px) {
+  .contact-wrap {
+    margin: auto;
+  }
+}
+@media (max-width: 868px) {
+	.contact-form {
+	  width: 100%;
+	  padding: 40px;
+	}
+}
+@media (max-width: 568px) {
+	.contact-form {
+	  padding: 10px;
+	}
+}
+
 /* IMPORT FONTS */
 @font-face {
     font-family: 'intro_head_rbase';
@@ -29,9 +253,13 @@ h3 {
 	font-family: 'intro_head_rbase';
 }
 
+.btn-orange {
+	background-color: #FF8500;
+	border-radius: 0;
+}
 
 @media (max-width: 768px) {
-	header {
+	/*header {
 		background-color: #fff;
 		background-image: url(../images/logo-header.png);
 		background-repeat: no-repeat;
@@ -41,6 +269,18 @@ h3 {
 		line-height: 115px;
 		margin-top: 30px;
 		padding:45px 35px;
+	}*/
+
+		header {
+		background-color: rgba(255,255,255,0.9);
+		background-image: url(../images/logo-header.png);
+		background-repeat: no-repeat;
+		background-position: center 4px;
+		width: 100%;
+		height: 100px;
+		line-height: 100px;
+		margin-top: 30px;
+		padding:38px 35px;
 	}
 
 	nav {
@@ -87,7 +327,7 @@ h3 {
 	}
 
 	.navOpen {
-		bottom:0
+		bottom:0;
 	}
 
 
@@ -131,6 +371,22 @@ h3 {
 		text-decoration: underline;
 	}
 
+	footer h1 {
+		font-family: 'intro_head_rbase';
+		display: inline-block;
+		text-transform: uppercase;
+	}
+
+	footer h1 span {
+		font-family: 'intro_rust_gbase';
+	}
+
+	footer h1::before {
+		content: url(../images/logo-notext.png);
+		display: block;
+		height: 100px;
+	}
+
 	footer ul {
 		padding: 0;
 		list-style: none;
@@ -145,11 +401,6 @@ h3 {
 	}
 
 	.newsletterForm input {
-		border-radius: 0;
-	}
-
-	.btn-orange {
-		background-color: #FF8500;
 		border-radius: 0;
 	}
 
@@ -270,6 +521,25 @@ h3 {
 
 	.opened {
 		bottom:0;
+
+	/*JS*/
+
+.smaller {
+	height: 65px;
+	background-color: #FFF;
+	position: fixed;
+	margin-top:0;
+	left:0;
+	top:0;
+	line-height: 65px;
+	background-image: url(../images/logo-header-white.png);
+	background-position: 0 -15px;
+	z-index:999;
+	-moz-box-shadow: 0px 5px 10px 0px #656565;
+	-webkit-box-shadow: 0px 5px 10px 0px #656565;
+	-o-box-shadow: 0px 5px 10px 0px #656565;
+	box-shadow: 0px 5px 10px 0px #656565;
+	filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=180, Strength=10);
 	}
 }
 
@@ -285,13 +555,13 @@ h3 {
 	/* HEADER ET NAVIGATION */
 
 	header {
-		background-color: #fff;
+		background-color: rgba(255,255,255,0.9);
 		background-image: url(../images/logo-header.png);
 		background-repeat: no-repeat;
-		background-position: 15px 10px;
+		background-position: 15px 4px;
 		width: 100%;
-		height: 115px;
-		line-height: 115px;
+		height: 100px;
+		line-height: 100px;
 		margin-top: 30px;
 	}
 
@@ -381,11 +651,6 @@ h3 {
 		float: left;
 	}
 
-	.btn-orange {
-		background-color: #FF8500;
-		border-radius: 0;
-	}
-
 	.socialNetworks ul li, .socialNetworks ul li a {
 		display: inline-block;
 		width: 64px;
@@ -420,6 +685,24 @@ h3 {
 	footer a:hover {
 		color:#FFF;
 		text-decoration: underline;
+	}
+
+	footer h1 {
+		font-family: 'intro_head_rbase';
+		display: inline-block;
+		width: 100%;
+		border-bottom:3px solid #fff;
+		text-transform: uppercase;
+	}
+
+	footer h1 span {
+		font-family: 'intro_rust_gbase';
+	}
+
+	footer h1::before {
+		content: url(../images/logo-notext.png);
+		display: inline-block;
+		vertical-align: middle;
 	}
 
 	/* PAGE ACCUEIL */
@@ -516,10 +799,11 @@ h3 {
 	}
 }
 
-/*JS*/
+	/*JS*/
 
 .smaller {
 	height: 65px;
+	background-color: #FFF;
 	position: fixed;
 	margin-top:0;
 	left:0;
@@ -533,3 +817,6 @@ h3 {
 	box-shadow: 0px 5px 10px 0px #656565;
 	filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=180, Strength=10);
 	}
+}
+
+
