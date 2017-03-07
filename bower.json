@@ -16,6 +16,7 @@
   ],
   "dependencies": {
     "gmaps": "^0.4.25",
-    "vegas": "^2.4.0"
+    "vegas": "^2.4.0",
+    "counter-up": "^1.0.0"
   }
 }
