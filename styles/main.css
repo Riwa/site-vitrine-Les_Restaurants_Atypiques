@@ -49,6 +49,7 @@
 
 h2{
 	text-align: center;
+	font-size: 30px;
 }
 
 .concept h2{
@@ -159,6 +160,114 @@ h2{
 	display: none;
 	color: #ff8500;
 }
+
+/*qui-sommes-nous*/
+
+.intro{
+	margin-top: 60px;
+	text-align: center;
+}
+
+.equipe img{
+	width:100%;
+}
+
+.equipe{
+	padding-top: 80px;
+	padding-bottom: 30px;
+}
+.all-equipe{
+	  background-color: #000;
+    background: url(../images/photo_equipe.jpg);
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 768px) {
+	.all-equipe{
+		background-color: #000;
+    background: url(../images/photo_equipe.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+	}
+}
+
+.all-equipe .title-qui-sommes-nous{
+	color: #FFF;
+	text-align: center;
+	margin: 70px 0px 70px 0px;
+}
+
+.all-equipe p{
+	color: #fff;
+	font-size: 18px;
+	text-align: justify;
+	margin-bottom: 70px;
+}
+
+.filter{
+	  background-color: rgba(26,36,44,0.7);
+    height: 100%;
+}
+
+/* Portraits */
+
+.portrait{
+		position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-size: cover;
+		margin: 0 auto;
+		margin-bottom: 40px;
+		box-shadow: 0 3px 0 #d7e4ed;
+}
+
+.portrait:hover{
+    transition: 0.5s;
+		background-size: cover;
+}
+
+.infos {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(26,36,44,0.7);
+	border-radius: 50%;
+	opacity: 0;
+	-webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.infos:hover {
+	opacity: 1;
+	-webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.text{
+	  position: absolute;
+    bottom: 10%;
+    width: 100%;
+		text-align: center;
+		overflow: hidden;
+		color: #fff;
+}
+
+.portrait.damien{
+	background-image: url(../images/damien.jpg);
+}
+
+.portrait.laurent{
+	background-image: url(../images/laurent.jpg);
+}
+
+.portrait.julien{
+	background-image: url(../images/julien.jpeg);
+}
+
+/*Formulaire*/ 
 
 @media all and (max-width: 1180px){
 	.wrap{
