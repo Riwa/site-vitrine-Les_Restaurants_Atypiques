@@ -220,6 +220,8 @@ h2{
     border-radius: 50%;
     background-size: cover;
 		margin: 0 auto;
+		margin-bottom: 40px;
+		box-shadow: 0 3px 0 #d7e4ed;
 }
 
 .portrait:hover{
