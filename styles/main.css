@@ -469,7 +469,13 @@ h3 {
 		transform: translateY(-50%);
 	}
 
-	.punchline h2 {
+	.pageTitleHeader {
+		text-align: center;
+		color: #FFF;
+		margin-top:50px;		
+	}
+
+	.punchline h2, .pageTitleHeader h2 {
 		font-family: 'intro_head_rbase';
 		font-size: 60px;
 	}
@@ -760,7 +766,13 @@ h3 {
 		transform: translateY(-50%);
 	}
 
-	.punchline h2 {
+	.pageTitleHeader {
+		text-align: center;
+		color: #FFF;
+		margin-top: 50px;	
+	}
+
+	.punchline h2, .pageTitleHeader h2 {
 		font-family: 'intro_head_rbase';
 		font-size: 72px;
 	}
