@@ -610,12 +610,19 @@ h3 {
 
 	nav ul li {
 		text-align: center;
-		font-size:18px;
+		font-family: 'intro_head_rbase';
+		font-size:24px;
 		display: inline-block;
 		width: 33%
 	}
 
-	nav ul li a, nav ul li a:hover {
+	nav ul li a {
+		display: inline-block;
+		text-decoration: none;
+		color:#000;
+	}
+
+	nav ul li a:hover {
 		color: #000;
 		text-decoration: none;
 	}
