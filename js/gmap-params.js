@@ -1,174 +1,80 @@
 $(document).ready(function () {
 
 	let screenWidth = window.innerWidth;
-	console.log(screenWidth);
 
 	let style = [
 		{
-			"featureType": "administrative",
-			"elementType": "labels.text.fill",
+			"featureType": "water",
+			"elementType": "geometry",
 			"stylers": [
 				{
-					"color": "#444444"
-				}
-			]
-		},
-		{
-			"featureType": "administrative.country",
-			"elementType": "geometry.fill",
-			"stylers": [
+					"color": "#e9e9e9"
+				},
 				{
-					"color": "#ff0000"
-				}
-			]
-		},
-		{
-			"featureType": "administrative.country",
-			"elementType": "geometry.stroke",
-			"stylers": [
-				{
-					"color": "#ffffff"
-				}
-			]
-		},
-		{
-			"featureType": "administrative.province",
-			"elementType": "geometry.stroke",
-			"stylers": [
-				{
-					"visibility": "off"
-				}
-			]
-		},
-		{
-			"featureType": "administrative.province",
-			"elementType": "labels.text",
-			"stylers": [
-				{
-					"visibility": "off"
-				}
-			]
-		},
-		{
-			"featureType": "administrative.locality",
-			"elementType": "geometry.stroke",
-			"stylers": [
-				{
-					"visibility": "off"
-				}
-			]
-		},
-		{
-			"featureType": "administrative.locality",
-			"elementType": "labels.text",
-			"stylers": [
-				{
-					"visibility": "off"
-				}
-			]
-		},
-		{
-			"featureType": "administrative.locality",
-			"elementType": "labels.text.stroke",
-			"stylers": [
-				{
-					"visibility": "off"
-				}
-			]
-		},
-		{
-			"featureType": "administrative.neighborhood",
-			"elementType": "labels",
-			"stylers": [
-				{
-					"visibility": "off"
+					"lightness": 17
 				}
 			]
 		},
 		{
 			"featureType": "landscape",
-			"elementType": "all",
+			"elementType": "geometry",
 			"stylers": [
 				{
-					"color": "#f2f2f2"
+					"color": "#f5f5f5"
+				},
+				{
+					"lightness": 20
 				}
 			]
 		},
 		{
-			"featureType": "landscape.man_made",
+			"featureType": "road.highway",
 			"elementType": "geometry.fill",
 			"stylers": [
 				{
-					"color": "#f7a50b"
+					"color": "#ffffff"
 				},
 				{
-					"visibility": "on"
+					"lightness": 17
 				}
 			]
 		},
 		{
-			"featureType": "landscape.man_made",
+			"featureType": "road.highway",
 			"elementType": "geometry.stroke",
 			"stylers": [
 				{
-					"visibility": "off"
-				}
-			]
-		},
-		{
-			"featureType": "landscape.man_made",
-			"elementType": "labels.text",
-			"stylers": [
-				{
-					"visibility": "off"
-				}
-			]
-		},
-		{
-			"featureType": "landscape.man_made",
-			"elementType": "labels.text.fill",
-			"stylers": [
-				{
-					"color": "#ff0000"
+					"color": "#ffffff"
 				},
 				{
-					"visibility": "off"
+					"lightness": 29
+				},
+				{
+					"weight": 0.2
 				}
 			]
 		},
 		{
-			"featureType": "landscape.man_made",
-			"elementType": "labels.icon",
+			"featureType": "road.arterial",
+			"elementType": "geometry",
 			"stylers": [
 				{
-					"visibility": "off"
+					"color": "#ffffff"
+				},
+				{
+					"lightness": 18
 				}
 			]
 		},
 		{
-			"featureType": "landscape.natural",
-			"elementType": "geometry.fill",
+			"featureType": "road.local",
+			"elementType": "geometry",
 			"stylers": [
 				{
-					"color": "#da8900"
-				}
-			]
-		},
-		{
-			"featureType": "landscape.natural",
-			"elementType": "labels.text",
-			"stylers": [
+					"color": "#ffffff"
+				},
 				{
-					"visibility": "off"
-				}
-			]
-		},
-		{
-			"featureType": "poi",
-			"elementType": "all",
-			"stylers": [
-				{
-					"visibility": "off"
+					"lightness": 16
 				}
 			]
 		},
@@ -177,96 +83,54 @@ $(document).ready(function () {
 			"elementType": "geometry",
 			"stylers": [
 				{
-					"visibility": "off"
-				}
-			]
-		},
-		{
-			"featureType": "poi",
-			"elementType": "labels",
-			"stylers": [
-				{
-					"visibility": "off"
-				}
-			]
-		},
-		{
-			"featureType": "poi",
-			"elementType": "labels.text",
-			"stylers": [
-				{
-					"visibility": "off"
-				}
-			]
-		},
-		{
-			"featureType": "road",
-			"elementType": "all",
-			"stylers": [
-				{
-					"saturation": -100
+					"color": "#f5f5f5"
 				},
 				{
-					"lightness": 45
+					"lightness": 21
 				}
 			]
 		},
 		{
-			"featureType": "road",
-			"elementType": "geometry.fill",
+			"featureType": "poi.park",
+			"elementType": "geometry",
 			"stylers": [
 				{
-					"color": "#ff8a00"
-				}
-			]
-		},
-		{
-			"featureType": "road",
-			"elementType": "geometry.stroke",
-			"stylers": [
+					"color": "#dedede"
+				},
 				{
-					"visibility": "off"
+					"lightness": 21
 				}
 			]
 		},
 		{
-			"featureType": "road",
-			"elementType": "labels",
-			"stylers": [
-				{
-					"visibility": "off"
-				}
-			]
-		},
-		{
-			"featureType": "road",
-			"elementType": "labels.text",
-			"stylers": [
-				{
-					"visibility": "off"
-				}
-			]
-		},
-		{
-			"featureType": "road",
-			"elementType": "labels.text.fill",
-			"stylers": [
-				{
-					"visibility": "off"
-				}
-			]
-		},
-		{
-			"featureType": "road",
 			"elementType": "labels.text.stroke",
 			"stylers": [
 				{
-					"visibility": "off"
+					"visibility": "on"
+				},
+				{
+					"color": "#ffffff"
+				},
+				{
+					"lightness": 16
 				}
 			]
 		},
 		{
-			"featureType": "road",
+			"elementType": "labels.text.fill",
+			"stylers": [
+				{
+					"saturation": 36
+				},
+				{
+					"color": "#333333"
+				},
+				{
+					"lightness": 40
+				}
+			]
+		},
+		{
 			"elementType": "labels.icon",
 			"stylers": [
 				{
@@ -275,117 +139,47 @@ $(document).ready(function () {
 			]
 		},
 		{
-			"featureType": "road.highway",
-			"elementType": "all",
+			"featureType": "transit",
+			"elementType": "geometry",
 			"stylers": [
 				{
-					"visibility": "simplified"
+					"color": "#f2f2f2"
+				},
+				{
+					"lightness": 19
 				}
 			]
 		},
 		{
-			"featureType": "road.highway",
+			"featureType": "administrative",
 			"elementType": "geometry.fill",
 			"stylers": [
 				{
-					"visibility": "on"
+					"color": "#fefefe"
+				},
+				{
+					"lightness": 20
 				}
 			]
 		},
 		{
-			"featureType": "road.highway",
+			"featureType": "administrative",
 			"elementType": "geometry.stroke",
 			"stylers": [
 				{
-					"visibility": "off"
-				}
-			]
-		},
-		{
-			"featureType": "road.highway",
-			"elementType": "labels.text",
-			"stylers": [
-				{
-					"visibility": "off"
-				}
-			]
-		},
-		{
-			"featureType": "road.highway",
-			"elementType": "labels.icon",
-			"stylers": [
-				{
-					"visibility": "off"
-				}
-			]
-		},
-		{
-			"featureType": "road.arterial",
-			"elementType": "labels.icon",
-			"stylers": [
-				{
-					"visibility": "off"
-				}
-			]
-		},
-		{
-			"featureType": "transit",
-			"elementType": "all",
-			"stylers": [
-				{
-					"visibility": "off"
-				}
-			]
-		},
-		{
-			"featureType": "transit",
-			"elementType": "labels.icon",
-			"stylers": [
-				{
-					"visibility": "off"
-				}
-			]
-		},
-		{
-			"featureType": "water",
-			"elementType": "all",
-			"stylers": [
-				{
-					"color": "#f2ba40"
+					"color": "#fefefe"
 				},
 				{
-					"visibility": "on"
-				}
-			]
-		},
-		{
-			"featureType": "water",
-			"elementType": "geometry.fill",
-			"stylers": [
+					"lightness": 17
+				},
 				{
-					"color": "#ffffff"
-				}
-			]
-		},
-		{
-			"featureType": "water",
-			"elementType": "labels.text",
-			"stylers": [
-				{
-					"visibility": "off"
-				}
-			]
-		},
-		{
-			"featureType": "water",
-			"elementType": "labels.icon",
-			"stylers": [
-				{
-					"visibility": "off"
+					"weight": 1.2
 				}
 			]
 		}
 	]
+
+	let icon = '../images/logo-marker.png';
 
 	let lyon = {
 		nom: 'Restaurant Atypique Lyon',
@@ -439,7 +233,7 @@ $(document).ready(function () {
 		div: '#map',
 		lat: 45.74627029999999,
 		lng: 4.826846799999998,
-		zoom: 5,
+		zoom: 6,
 		styles: style
 
 	});
@@ -452,6 +246,7 @@ $(document).ready(function () {
 			lat: 45.74627029999999,
 			lng: 4.826846799999998,
 			title: 'Restaurant Atypique Lyon',
+			icon: icon,
 			// OUVERTURE DE LA FICHE RESTAURANT
 			click: function (e) {
 				$('.ficheRestaurant')
@@ -478,6 +273,7 @@ $(document).ready(function () {
 			lat: 45.74627029999999,
 			lng: 4.826846799999998,
 			title: 'Restaurant Atypique Lyon',
+			icon: icon,
 			// AFFICHAGE D'UNE TOOLTIP SUR ECRAN PORTABLE
 			infoWindow: {
 				content: '<h3>' + lyon.nom + '</h3><p>' + lyon.description + '</p><p>' + lyon.adresse + '</p><p>' + lyon.horaires + '</p><p>' + lyon.contact + '</p>'
@@ -490,6 +286,7 @@ $(document).ready(function () {
 			lat: 48.473369,
 			lng: 1.011731,
 			title: 'Restaurant Atypique La Loupe',
+			icon: icon,
 			// OUVERTURE DE LA FICHE RESTAURANT
 			click: function (e) {
 				$('.ficheRestaurant')
@@ -516,6 +313,7 @@ $(document).ready(function () {
 			lat: 48.473369,
 			lng: 1.011731,
 			title: 'Restaurant Atypique La Loupe',
+			icon: icon,
 			// AFFICHAGE D'UNE TOOLTIP SUR ECRAN PORTABLE
 			infoWindow: {
 				content: '<h3>' + laLoupe.nom + '</h3><p>' + laLoupe.description + '</p><p>' + laLoupe.adresse + '</p><p>' + laLoupe.horaires + '</p><p>' + laLoupe.contact + '</p>'
@@ -528,6 +326,7 @@ $(document).ready(function () {
 			lat: 47.89387010000001,
 			lng: 1.8941995000000134,
 			title: 'Restaurant Atypique Orléans',
+			icon: icon,
 			// OUVERTURE DE LA FICHE RESTAURANT
 			click: function (e) {
 				$('.ficheRestaurant')
@@ -554,6 +353,7 @@ $(document).ready(function () {
 			lat: 47.89387010000001,
 			lng: 1.8941995000000134,
 			title: 'Restaurant Atypique Orléans',
+			icon: icon,
 			// AFFICHAGE D'UNE TOOLTIP SUR ECRAN PORTABLE
 			infoWindow: {
 				content: '<h3>' + orleans.nom + '</h3><p>' + orleans.description + '</p><p>' + orleans.adresse + '</p><p>' + orleans.horaires + '</p><p>' + orleans.contact + '</p>'
@@ -566,6 +366,7 @@ $(document).ready(function () {
 			lat: 48.4037414,
 			lng: 2.694321299999956,
 			title: 'Restaurant Atypique Fontainebleau',
+			icon: icon,
 			// OUVERTURE DE LA FICHE RESTAURANT
 			click: function (e) {
 				$('.ficheRestaurant')
@@ -592,6 +393,7 @@ $(document).ready(function () {
 			lat: 48.4037414,
 			lng: 2.694321299999956,
 			title: 'Restaurant Atypique Fontainebleau',
+			icon: icon,
 			// AFFICHAGE D'UNE TOOLTIP SUR ECRAN PORTABLE
 			infoWindow: {
 				content: '<h3>' + fontainebleau.nom + '</h3><p>' + fontainebleau.description + '</p><p>' + fontainebleau.adresse + '</p><p>' + fontainebleau.horaires + '</p><p>' + fontainebleau.contact + '</p>'
@@ -604,6 +406,7 @@ $(document).ready(function () {
 			lat: 44.8336476,
 			lng: -0.5660190999999486,
 			title: 'Restaurant Atypique Bordeaux',
+			icon: icon,
 			// OUVERTURE DE LA FICHE RESTAURANT
 			click: function (e) {
 				$('.ficheRestaurant')
@@ -630,6 +433,7 @@ $(document).ready(function () {
 			lat: 44.8336476,
 			lng: -0.5660190999999486,
 			title: 'Restaurant Atypique Bordeaux',
+			icon: icon,
 			// AFFICHAGE D'UNE TOOLTIP SUR ECRAN PORTABLE
 			infoWindow: {
 				content: '<h3>' + bordeaux.nom + '</h3><p>' + bordeaux.description + '</p><p>' + bordeaux.adresse + '</p><p>' + bordeaux.horaires + '</p><p>' + bordeaux.contact + '</p>'
@@ -642,6 +446,7 @@ $(document).ready(function () {
 			lat: 43.6015191,
 			lng: 1.4420288000000028,
 			title: 'Restaurant Atypique Toulouse',
+			icon: icon,
 			// OUVERTURE DE LA FICHE RESTAURANT
 			click: function (e) {
 				$('.ficheRestaurant')
@@ -668,6 +473,7 @@ $(document).ready(function () {
 			lat: 43.6015191,
 			lng: 1.4420288000000028,
 			title: 'Restaurant Atypique Toulouse',
+			icon: icon,
 			// AFFICHAGE D'UNE TOOLTIP SUR ECRAN PORTABLE
 			infoWindow: {
 				content: '<h3>' + toulouse.nom + '</h3><p>' + toulouse.description + '</p><p>' + toulouse.adresse + '</p><p>' + toulouse.horaires + '</p><p>' + toulouse.contact + '</p>'
