@@ -26,9 +26,10 @@
 <body>
 	<!--Header inclut-->
 	<div id="top">
-		<div id="menu"></div>
-		<div class="punchline">
-			<h2>Titre page</h2>
+		<div id="menu">
+			<div class="punchline">
+				<h2>Titre page</h2>
+			</div>
 		</div>
 	</div>
 	<div class="container">
@@ -113,7 +114,10 @@
 		</div>
 	</div>
 	<!--Contact form-->
-	<div class="research background-size">
+	<div class="alert alert-success" id="confirmation-form">
+		<i class="glyphicon glyphicon-ok"></i> Votre formulaire a bien été envoyé
+	</div>
+	<div class="research background-size" id="form-container">
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12">
@@ -122,56 +126,53 @@
 				</div>
 			</div>
 			<div class="contact-wrap">
-				<form action="" class="contact-form">
+				<form action="" class="contact-form" id="contact-form">
 					<div class="row">
 						<div class="col-sm-6">
-							<div class="input-block">
+							<div class="input-block" id="input-prenom">
 								<label for="">Prénom</label>
-								<input type="text" class="form-control">
+								<input type="text" class="form-control" id="prenom">
 							</div>
 						</div>
 						<div class="col-sm-6">
-							<div class="input-block">
+							<div class="input-block" id="input-nom">
 								<label for="">Nom</label>
-								<input type="text" class="form-control">
+								<input type="text" class="form-control" id="nom">
 							</div>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-sm-12">
-							<div class="input-block">
+							<div class="input-block" id="input-email">
 								<label for="">Email</label>
-								<input type="text" class="form-control">
+								<input type="email" class="form-control" id="email">
 							</div>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-sm-12">
-							<div class="input-block">
+							<div class="input-block" id="input-objet">
 								<label for="">Objet</label>
-								<input type="text" class="form-control">
+								<input type="text" class="form-control" id="objet">
 							</div>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-sm-12">
-							<div class="input-block textarea">
+							<div class="input-block textarea" id="input-message">
 								<label for="">Message</label>
-								<textarea rows="3" type="text" class="form-control"></textarea>
+								<textarea rows="3" type="text" class="form-control" id="message"></textarea>
 							</div>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-sm-12 text-center">
-							<button class="btn btn-orange btn-pages btn-form">Envoyer</button>
+							<input type="submit" class="btn btn-orange btn-pages btn-form" id="btn-contact" value="Envoyer">
 						</div>
 					</div>
 				</form>
 			</div>
 		</div>
-	</div>
-	<div class="container">
-
 	</div>
 	<!--Footer-->
 	<footer>

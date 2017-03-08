@@ -70,6 +70,7 @@ h2{
 		margin-top: 250px;
 	}
 }
+
 /*troisieme partie sur nos services*/
 .our-services{
 	margin-bottom: 80px;
@@ -143,6 +144,20 @@ h2{
 	font-size: 1.2em;
 	line-height: 1.6em;
   text-align: center;
+}
+
+#confirmation-form{
+	display: none;
+	text-align: center;
+}
+
+.contact-form .input-block.error {
+	border-bottom: 2px solid #ff8500;
+}
+
+.error-container {
+	display: none;
+	color: #ff8500;
 }
 
 @media all and (max-width: 1180px){
