@@ -1,0 +1,27 @@
+h2{
+	font-size: 30px;
+}
+
+.cd-timeline-img{
+  background-color:#fff;
+}
+
+body{
+	background-color: #fff;
+}
+
+@media only screen and (min-width: 768px){
+		.cd-timeline-content h2{
+			font-size: 30px;
+			}
+}
+
+#cd-timeline{
+	background-color: #e9f0f5;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.intro p{
+	color:#333;
+}
