@@ -9,8 +9,6 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--Import de Open Sans depuis Google Fonts-->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
-	<!--Feuille de style Vegas - plugin pour slideshow-->
-	<link rel="stylesheet" href="../styles/vegas.css">
 	<!--Animate.css-->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 	<!--Notre feuille de style-->
@@ -18,30 +16,16 @@
 </head>
 
 <body>
+	<!--Top layout-->
 	<div class="pageTitle">
-		<div class="container">
-			<header id="jsHeader">
-				<div id="menuButton">
-					<div></div>
-					<div></div>
-					<div></div>
-				</div>
-				<nav class="animated">
-					<i id="navClose" class="glyphicon glyphicon-remove-circle"></i>
-					<img src="images/logo-header.png" alt="Logo">
-					<ul>
-						<li><a href="#">Qui sommes-nous ?</a></li>
-						<li><a href="#">Nos restaurants</a></li>
-						<li><a id="franchise" href="#">Devenir franchisé</a></li>
-					</ul>
-				</nav>
-			</header>
-			<div class="punchline">
-				<h2>Mentions légales</h2>
-			</div>
+		<div class="container topContainer">
+			<!-- Inclusion de header en js -->
+		</div>
+		<div class="punchline">
+			<h2>Mentions légales</h2>
 		</div>
 	</div>
-	</div>
+	<!-- /Top layout -->
 
 	<div class="container">
 		<p>SAS LES RESTAURANTS ATYPIQUES<br> 18 rue de La Gare<br> 28240 La Loupe<br> SAS au capital de 7 000 euros<br> 794 926 063
@@ -74,16 +58,15 @@
 
 	</footer>
 
-	<!--jQuery-->
-	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-		crossorigin="anonymous"></script>
-		<script src="../js/core.js"></script>
-		<script src="../js/load_footer.js"></script>
-		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1sTAgICFWK2Pwh560SUmWXoNZmWovUQk" type="text/javascript"></script>
-		<script src="../bower_components/gmaps/gmaps.min.js"></script>
-		<script src="../js/gmap-params.js"></script>
-		<!--Bootstrap JavaScript-->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+	<!-- Layout -->
+	<script src="../js/load_header_pages.js"></script>
+	<script src="../js/load_footer.js"></script>
+
+	<!--Bootstrap JavaScript-->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 
 </html>
