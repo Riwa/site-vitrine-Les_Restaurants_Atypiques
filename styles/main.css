@@ -29,6 +29,10 @@ h2{
 
 h3 {
 	font-family: 'intro_head_rbase';
+	font-size:30px;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 h4 {
@@ -337,6 +341,7 @@ header {
 #intro{
 	text-align: center;
 	padding-bottom: 20px;
+	padding-top: 20px;
 }
 
 .btn-form{
@@ -549,7 +554,7 @@ header {
 .all-equipe .title-qui-sommes-nous{
 	color: #FFF;
 	text-align: center;
-	margin: 70px 0px 70px 0px;
+	margin: 30px 0px 30px 0px;
 }
 
 .all-equipe p{
@@ -792,6 +797,7 @@ header {
 	/***** FORMULAIRE DE CONTACT *****/
   .contact-wrap {
     margin: auto;
+		padding-bottom: 20px;
   }
 	.contact-form{
 		width: 100%;
