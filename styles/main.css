@@ -50,6 +50,7 @@
 h2{
 	text-align: center;
 	font-size: 30px;
+	font-weight: inherit;
 }
 
 .concept h2{
@@ -446,6 +447,7 @@ h3 {
 	nav ul li a, nav ul li a:hover {
 		color: #FFF;
 		text-decoration: none;
+		font-family: 'intro_head_rbase';
 	}
 
 	nav ul li a#franchise {
@@ -746,6 +748,7 @@ h3 {
 	nav ul li a {
 		display: inline-block;
 		text-decoration: none;
+		font-family: 'intro_head_rbase';
 		color:#000;
 	}
 
