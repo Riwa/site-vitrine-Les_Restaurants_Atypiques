@@ -673,15 +673,19 @@ h3 {
 	}
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
+/*@media (max-width: 991px) and (min-width:768px) {
 
-}
+	nav ul li {
+		text-align: center;
+		font-family: 'intro_head_rbase';
+		font-size:24px;
+		display: inline-block;
+		width: 20%;
 
-@media (min-width: 992px) and (max-width: 1200px) {
+	}
+}*/
 
-}
-
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
 	/* HEADER ET NAVIGATION */
 
 	header {
@@ -715,7 +719,7 @@ h3 {
 		font-family: 'intro_head_rbase';
 		font-size:24px;
 		display: inline-block;
-		width: 33%
+		width: 32%;
 	}
 
 	nav ul li a {
