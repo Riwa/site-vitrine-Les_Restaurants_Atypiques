@@ -187,10 +187,7 @@ h2{
 
 @media screen and (max-width: 768px) {
 	.all-equipe{
-		background-color: #000;
-    background: url(../images/photo_equipe.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
+		background-size:inherit;
 	}
 }
 
@@ -270,16 +267,6 @@ h2{
 
 /*Formulaire*/ 
 
-@media all and (max-width: 1180px){
-	.wrap{
-	width: 100%;
-	height: 100%;
-	margin-left: auto;
-	margin-right: auto;
-	position: relative;
-	}
-}
-
 .contact-form {
   width: 50%;
   margin: 0 auto;
@@ -335,22 +322,20 @@ h2{
   font-size: 18px;
 }
 
-@media (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .contact-wrap {
     margin: auto;
   }
-}
-@media (max-width: 868px) {
-	.contact-form {
-	  width: 100%;
-	  padding: 40px;
-	}
-}
-@media (max-width: 568px) {
-	.contact-form {
+	.contact-form{
+		width: 100%;
 	  padding: 10px;
 	}
+	.background-size{
+	width:100%;
+	padding:0px;
+	}
 }
+
 
 /* IMPORT FONTS */
 @font-face {
@@ -389,18 +374,6 @@ h3 {
 }
 
 @media (max-width: 768px) {
-	/*header {
-		background-color: #fff;
-		background-image: url(../images/logo-header.png);
-		background-repeat: no-repeat;
-		background-position: 15px 10px;
-		width: 100%;
-		height: 115px;
-		line-height: 115px;
-		margin-top: 30px;
-		padding:45px 35px;
-	}*/
-
 		header {
 		background-color: rgba(255,255,255,0.9);
 		background-image: url(../images/logo-header.png);
