@@ -382,6 +382,9 @@ header {
   font-size: 18px;
 }
 
+#form-container{
+	background-color:#e9f0f5;
+}
 
 /***** DEVENIR FRANCHISE *****/
 .circle {
