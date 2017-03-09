@@ -158,6 +158,7 @@ header {
 	footer ul {
 		padding: 0;
 		list-style: none;
+		margin-top:30px;
 	}
 
 	.listRestaurants, .socialNetworks, .newsletterForm {
@@ -701,6 +702,10 @@ header {
 @media screen and (max-width: 768px) {
 
 	/***** LAYOUT *****/
+.punchline h2 {
+	font-size: 60px;
+}
+
 
 	header {
 		background-color: rgba(255,255,255,0.9);
@@ -820,6 +825,12 @@ header {
 	/***** QUI SOMMES NOUS *****/
 .all-equipe{
 		background-size:inherit;
+	}
+
+
+
+	.smaller {
+		padding-top:20px;
 	}
 }
 
