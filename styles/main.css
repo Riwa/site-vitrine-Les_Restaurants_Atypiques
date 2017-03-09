@@ -31,6 +31,13 @@ h3 {
 	font-family: 'intro_head_rbase';
 }
 
+h4 {
+	text-align: center;
+	font-size: 24px;
+	font-family: 'intro_head_rbase';
+
+}
+
 .rust {
 	font-family: 'intro_rust_gbase'!important;
 }
@@ -58,6 +65,14 @@ header {
 		float: right;
 		text-align: center;
 		width:80%;
+	}
+
+	.linkToIndex {
+		position: absolute;
+		width: 120px;
+		height: 100%;
+		top:0;
+		left: 0;
 	}
 
 	#navClose {
@@ -112,7 +127,6 @@ header {
 
 	.pageTitle {
 		height: 50%;
-		background-image: url(../images/01.jpg);
 		background-size: cover;
 		background-position: center center;
 		position:relative;
@@ -210,6 +224,34 @@ header {
 		vertical-align: middle;
 	}
 
+	.containerMentionLegales {
+		margin-top:30px;
+		margin-bottom:30px;
+	}
+
+
+	/***** TITRES PAGES *****/
+
+.pageTitleHeaderFranchise {
+	background-image: url(../images/image_devenir_franchise.jpg);
+}
+
+.pageTitleAbout {
+	background-image: url(../images/01.jpg)
+}
+
+.pageTitleRestaurants {
+	background-image: url(../images/02.jpg)
+}
+
+.pageTitleContact {
+	background-image: url(../images/image_contact.jpg)
+}
+
+.pageTitleMentionsLegales {
+	background-image: url(../images/image_autrecontact.jpg)
+}
+
 /***** ACCUEIL *****/
 .slideshowBkg {
 	height: 100%;
@@ -234,8 +276,9 @@ header {
 	.pageTitleHeader {
 		text-align: center;
 		color: #FFF;
-		margin-top: 50px;
 		position: relative;
+		top: 15%;
+		transform: translateY(-50%);
 	}
 
 	.pageTitleHeader h2 {
@@ -418,7 +461,7 @@ header {
 
 .phrase-numbers-key{
 	text-align: center;
-	font-size: 20px;
+	font-size: 18px;
 }
 
 .concept{
@@ -462,7 +505,7 @@ header {
 	color:#ff8500;
 }
 
-#first-icon{
+.first-icon{
 	padding-top:30px;
 }
 
@@ -680,6 +723,10 @@ header {
 		text-align: center;
 	}
 
+		.linkToIndex {
+		left: 40%;
+	}
+
 	#navClose {
 		font-size: 30px;
 		position: absolute;
@@ -767,5 +814,12 @@ header {
 	/***** QUI SOMMES NOUS *****/
 .all-equipe{
 		background-size:inherit;
+	}
+}
+
+@media screen and (min-width: 970px) {
+	.newsletterForm input {
+		width:inherit;
+		margin-bottom: 15px;
 	}
 }

@@ -18,7 +18,7 @@
 
 <body>
 	<!--Top layout-->
-	<div class="pageTitle">
+	<div class="pageTitle pageTitleHeaderFranchise">
 		<div class="overlay"></div>
 		<div class="container topContainer">
 			<!-- Inclusion de header en js -->
@@ -58,15 +58,15 @@
 		<div class="concept">
 			<div class="row">
 				<div class="col-xs-12">
-					<h2>Notre concept</h2>
+					<h3>Notre concept</h3>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-xs-12 col-md-6 width-picture">
-					<img src="../images/restaurant.jpg" alt="Plat d'un restaurant atypique'">
+					<img src="../images/restaurant.jpg" alt="Salle d'un restaurant atypique'">
 				</div>
 				<div class="col-xs-0 col-md-6" id="paragraphe-concept">
-					<p id="first-icon">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ornare interdum sem, a sollicitudin nunc aliquam nec.
+					<p class="first-icon">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ornare interdum sem, a sollicitudin nunc aliquam nec.
 						Nunc at hendrerit est. Fusce eros nibh, sodales vel lorem ut, vulputate congue neque. Donec vitae sem dui. Etiam mollis
 						mollis magna non consequat. Duis vitae felis turpis. Donec mollis mollis ex at pulvinar. Sed sit amet eros sed dui
 						sodales porta. Pellentesque euismod massa eu eros viverra, a ullamcorper nisl tincidunt. Morbi vel interdum risus,
@@ -83,7 +83,7 @@
 			<div class="row">
 				<div class="col-xs-0 col-md-6">
 					<div>
-						<span class="glyphicon glyphicon-ok icon-bootstrap" id="first-icon"></span>
+						<span class="glyphicon glyphicon-ok icon-bootstrap first-icon"></span>
 						<p>Etiam hendrerit accumsan nisi a dignissim. Curabitur elementum molestie nisl eget semper. In a massa ac dui porta cursus.
 							Vivamus venenatis nunc nec ante porta, in pellentesque justo posuere. Sed sed enim ante.</p>
 					</div>
@@ -104,7 +104,7 @@
 					</div>
 				</div>
 				<div class="col-xs-12 col-md-6 width-picture">
-					<img src="../images/restaurant_1.jpg" alt="photo d'un restaurant'">
+					<img src="../images/restaurant_1.jpg" alt="Salle d'un restaurant atypique'">
 				</div>
 			</div>
 		</div>
@@ -117,22 +117,22 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12">
-					<h2>Contactez-nous ! </h2>
+					<h3>Contactez-nous ! </h3>
 					<p id="intro">Futurs franchisés motivés et prêts à rejoindre une aventure très atypique prenez contact avec nous : <br/></p>
 				</div>
 			</div>
 			<div class="contact-wrap">
-				<form action="" class="contact-form" id="contact-form">
+				<form action="javascript.void(0)" class="contact-form" id="contact-form">
 					<div class="row">
 						<div class="col-sm-6">
 							<div class="input-block" id="input-prenom">
-								<label for="">Prénom</label>
+								<label for="prenom">Prénom</label>
 								<input type="text" class="form-control" id="prenom" required>
 							</div>
 						</div>
 						<div class="col-sm-6">
 							<div class="input-block" id="input-nom">
-								<label for="">Nom</label>
+								<label for="nom">Nom</label>
 								<input type="text" class="form-control" id="nom" required>
 							</div>
 						</div>
@@ -140,7 +140,7 @@
 					<div class="row">
 						<div class="col-sm-12">
 							<div class="input-block" id="input-email">
-								<label for="">Email</label>
+								<label for="email">Email</label>
 								<input type="email" class="form-control" id="email" required>
 							</div>
 						</div>
@@ -148,7 +148,7 @@
 					<div class="row">
 						<div class="col-sm-12">
 							<div class="input-block" id="input-objet">
-								<label for="">Objet</label>
+								<label for="objet">Objet</label>
 								<input type="text" class="form-control" id="objet" required>
 							</div>
 						</div>
@@ -156,8 +156,8 @@
 					<div class="row">
 						<div class="col-sm-12">
 							<div class="input-block textarea" id="input-message">
-								<label for="">Message</label>
-								<textarea rows="3" type="text" class="form-control" id="message" required></textarea>
+								<label for="message">Message</label>
+								<textarea rows="3" class="form-control" id="message" required></textarea>
 							</div>
 						</div>
 					</div>
