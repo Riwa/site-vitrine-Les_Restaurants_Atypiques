@@ -10,16 +10,19 @@
 	<!--Import de Open Sans depuis Google Fonts-->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 	<!--Feuille de style Vegas - plugin pour slideshow-->
-	<link rel="stylesheet" href="styles/vegas.css">
+	<link rel="stylesheet" href="../styles/vegas.css">
 	<!--Animate.css-->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 	<!--Notre feuille de style-->
-	<link href="styles/main.css" rel="stylesheet">
+	<link href="../styles/main.css" rel="stylesheet">
+
 </head>
 
 <body>
 	<div class="slideshowBkg">
-		<div class="container">
+		<div class="container containerAccueil">
+			<div class="row">
+			</div>
 			<header id="jsHeader">
 				<div id="menuButton">
 					<div></div>
@@ -28,21 +31,18 @@
 				</div>
 				<nav class="animated">
 					<i id="navClose" class="glyphicon glyphicon-remove-circle"></i>
-					<img src="images/logo-header.png" alt="Logo">
+					<a href="index.html"> <img src="../images/logo-header-white.png" alt="Logo"> </a>
 					<ul>
-						<li><a href="#">Qui sommes-nous ?</a></li>
-						<li><a href="#">Nos restaurants</a></li>
-						<li><a id="franchise" href="#">Devenir franchisé</a></li>
+						<li><a href="qui_sommes_nous.html">Qui sommes-nous ?</a></li>
+						<li><a href="nos_restaurants.html">Nos restaurants</a></li>
+						<li><a id="franchise" href="devenir_une_franchise.html">Devenir franchisé</a></li>
 					</ul>
 				</nav>
 			</header>
 			<div class="punchline">
-				<h2>Typiquement</h2>
-				<img src="images/logo-accueil.png" alt="">
-				<h2 class="rust">Atypique</h2>
+				<h2>Typiquement<br><br><span class="rust">Atypique</span></h2>
 			</div>
 		</div>
-	</div>
 	</div>
 
 	<div class="container">
@@ -52,82 +52,38 @@
 		</div>
 		<div class="row valeursAccueil">
 			<div class="col-lg-4">
-				<img src="images/vin.jpg" alt="">
+				<img src="../images/vin.jpg" alt="Bon vin">
 				<p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people
 					who make shows, and on the strength of that one show they decide if they're going to make more shows.</p>
 			</div>
 			<div class="col-lg-4">
-				<img src="images/chef.jpg" alt="">
+				<img src="../images/chef.jpg" alt="Chef cuisinier">
 				<p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people
 					who make shows, and on the strength of that one show they decide if they're going to make more shows.</p>
 			</div>
 			<div class="col-lg-4">
-				<img src="images/frais.jpg" alt="">
+				<img src="../images/frais.jpg" alt="Produits frais">
 				<p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people
 					who make shows, and on the strength of that one show they decide if they're going to make more shows.</p>
 			</div>
 		</div>
 		<div class="row">
-			<div class="btn btn-orange bigButton col-lg-4 col-lg-offset-4">Découvrez-nous</div>
+			<a href="qui_sommes_nous.html" class="btn btn-orange bigButton col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-xs-6 col-xs-offset-3">Découvrez-nous</a>
 		</div>
 	</div>
-
 	<footer>
-		<div class="container">
-			<div class="row">
-				<div class="listRestaurantsFooter col-lg-4">
-					<h3>Nos restaurants</h3>
-					<ul>
-						<li><a href="#">La Loupe</a></li>
-						<li><a href="#">Chartres</a></li>
-						<li><a href="#">Fontainebleau</a></li>
-						<li><a href="#">Bordeaux</a></li>
-						<li><a href="#">Toulouse</a></li>
-						<li><a href="#">Lyon</a></li>
-					</ul>
-				</div>
-				<div class="newsletterForm col-lg-4">
-					<h3>Newsletter</h3>
-					<form action="" method="POST" role="form">
-						<div class="form-group">
-							<input type="text" class="form-control" id="" placeholder="Votre adresse e-mail">
-						</div>
-						<button type="button" class="btn btn-orange">OK</button>
-					</form>
 
-				</div>
-				<div class="socialNetworks col-lg-4">
-					<h3>Suivez-nous</h3>
-					<ul>
-						<li>
-							<a id="facebook" href="#"></a>
-						</li>
-						<li>
-							<a id="twitter" href="#"></a>
-						</li>
-						<li>
-							<a id="instagram" href="#"></a>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="row">
-				<ul class="footerLinks">
-					<li><a href="#">Mentions légales</a></li>
-					<li> | <a href="#">CGU</a> | </li>
-					<li><a href="#">Contact</a></li>
-				</ul>
-			</div>
-		</div>
 	</footer>
 
 	<!--jQuery-->
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
 		crossorigin="anonymous"></script>
 		<!--Vegas jQuery-->
-		<script src="js/vegas.js"></script>
-		<script src="js/slideshow.js"></script>
-		<script src="js/core.js"></script>
+		<script src="../js/vegas.js"></script>
+		<script src="../js/slideshow.js"></script>
+		<script src="../js/core.js"></script>
+
+		<script src="../js/load_footer.js"></script>
 		<!--Bootstrap JavaScript-->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>

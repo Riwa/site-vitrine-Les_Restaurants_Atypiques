@@ -21,226 +21,66 @@ html, body {
 	font-size: 14px;
 }
 
-.slideshowBkg {
-	height: 100%;
+h2{
+	text-align: center;
+	font-size: 30px;
+	font-weight: inherit;
 }
 
 h3 {
 	font-family: 'intro_head_rbase';
+	font-size:30px;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+h4 {
+	text-align: center;
+	font-size: 24px;
+	font-family: 'intro_head_rbase';
+
+}
+
+.rust {
+	font-family: 'intro_rust_gbase'!important;
+}
+
+.btn-orange {
+	background-color: #FF8500;
+	border-radius: 0;
+}
+
+.btn-margin-bottom {
+	margin-bottom:30px;
 }
 
 
-@media (max-width: 768px) {
-	header {
-		background-color: #fff;
+/***** LAYOUT *****/
+header {
+		background-color: rgba(255,255,255,0.9);
 		background-image: url(../images/logo-header.png);
 		background-repeat: no-repeat;
-		background-position: 15px 10px;
+		background-position: 15px 4px;
 		width: 100%;
-		height: 115px;
-		line-height: 115px;
+		height: 100px;
+		line-height: 100px;
 		margin-top: 30px;
-		padding:45px 35px;
-	}
-
-	nav {
-		float: right;
-		background-color:#292929;
-		color: #FFF;
-		position: fixed;
-		z-index: 999;
-		width: 100%;
-		height: 100%;
-		bottom:-1000px;
-		left:0;
-		text-align: center;
-	}
-
-	#navClose {
-		font-size: 30px;
-		position: absolute;
-		right:30px;
-		top:30px;
-	}
-
-	nav ul {
-		padding: 0;
-	}
-
-	nav ul li {
-		text-align: center;
-		font-size:24px;
-	}
-
-	nav ul li a, nav ul li a:hover {
-		color: #FFF;
-		text-decoration: none;
-	}
-
-	nav ul li a#franchise {
-		color:#FF8500; 
-	}
-
-	nav img {
-		margin-top:75px;
-		margin-bottom: 30px;
-	}
-
-	.navOpen {
-		bottom:0
-	}
-
-
-	#menuButton {
-		width: 40px;
-		height: 15px;
-		float: right;
-	}
-
-	#menuButton div {
-		width: 100%;
-		height: 33%;
-		background-color: #000000;
-	}
-
-	#menuButton div + div {
-		margin: 5px 0;
-	}
-
-		footer {
-		background-color:#262626;
-		color: #FFF;
-		width: 100%;
-		text-align: center;
-	}
-
-	footer a {
-		color: #FFF;
-		text-decoration: none;
-	}
-
-	footer a:hover {
-		color:#FFF;
-		text-decoration: underline;
-	}
-
-	footer ul {
-		padding: 0;
-		list-style: none;
-	}
-
-	.listRestaurants, .socialNetworks, .newsletterForm {
-		margin-top: 50px;
-	}
-
-	.newsletterForm {
-		text-align: center;
-	}
-
-	.newsletterForm input {
-		border-radius: 0;
-	}
-
-	.btn-orange {
-		background-color: #FF8500;
-		border-radius: 0;
-	}
-
-	.socialNetworks ul li, .socialNetworks ul li a {
-		display: inline-block;
-		width: 64px;
-		height: 64px;
-	}
-
-	.socialNetworks ul li::nth-child(2) {
-		margin: 0 10px;
-	}
-
-	#facebook {
-		background-image: url(../images/facebook.png);
-	}
-
-	#twitter {
-		background-image: url(../images/twitter.png);
-	}
-
-	#instagram {
-		background-image: url(../images/instagram.png);
-	}
-
-	.footerLinks li {
-		display: inline;
-	}
-
-	/* ACCUEIL */
-
-	.vegas-wrapper {
-		background-color: rgba(0,0,0,0.5);
-	}
-
-	.punchline {
-		text-align: center;
-		color: #FFF;
-	}
-
-	.punchline h2 {
-		font-family: 'intro_head_rbase';
-		font-size: 60px;
-	}
-
-	.rust {
-		font-family: 'intro_rust_gbase'!important;
-	}
-
-	.presentationAccueil {
-		text-align: center;
-		margin: 50px 0;
-	}
-
-	.valeursAccueil img {
-		border-radius: 50%;
-		margin-bottom:30px;
-	}
-
-	.valeursAccueil {
-		text-align: center;
-	}
-
-	.bigButton {
-		font-family: 'intro_head_rbase';
-		color: #FFF;
-		font-size: 24px;
-		margin-top: 100px;
-		margin-bottom:100px;
-	}
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-
-}
-
-@media (min-width: 992px) and (max-width: 1200px) {
-
-}
-
-@media (min-width: 1200px) {
-	/* HEADER ET NAVIGATION */
-
-	header {
-		background-color: #fff;
-		background-image: url(../images/logo-header.png);
-		background-repeat: no-repeat;
-		background-position: 15px 10px;
-		width: 100%;
-		height: 115px;
-		line-height: 115px;
-		margin-top: 30px;
+		position: relative;
 	}
 
 	nav {
 		float: right;
 		text-align: center;
 		width:80%;
+	}
+
+	.linkToIndex {
+		position: absolute;
+		width: 120px;
+		height: 100%;
+		top:0;
+		left: 0;
 	}
 
 	#navClose {
@@ -253,12 +93,20 @@ h3 {
 
 	nav ul li {
 		text-align: center;
-		font-size:18px;
+		font-family: 'intro_head_rbase';
+		font-size:24px;
 		display: inline-block;
-		width: 33%
+		width: 32%
 	}
 
-	nav ul li a, nav ul li a:hover {
+	nav ul li a {
+		display: inline-block;
+		text-decoration: none;
+		font-family: 'intro_head_rbase';
+		color:#000;
+	}
+
+	nav ul li a:hover {
 		color: #000;
 		text-decoration: none;
 	}
@@ -285,6 +133,20 @@ h3 {
 	}
 
 
+	.pageTitle {
+		height: 50%;
+		background-size: cover;
+		background-position: center center;
+		position:relative;
+	}
+
+	.overlay {
+		position:absolute;
+		background-color:rgba(0,0,0,0.5);
+		width: 100%;
+		height: 100%;
+	}
+
 
 	footer {
 		background-color:#262626;
@@ -300,6 +162,7 @@ h3 {
 	footer ul {
 		padding: 0;
 		list-style: none;
+		margin-top:30px;
 	}
 
 	.listRestaurants, .socialNetworks, .newsletterForm {
@@ -314,11 +177,6 @@ h3 {
 		border-radius: 0;
 		width: 80%;
 		float: left;
-	}
-
-	.btn-orange {
-		background-color: #FF8500;
-		border-radius: 0;
 	}
 
 	.socialNetworks ul li, .socialNetworks ul li a {
@@ -357,15 +215,84 @@ h3 {
 		text-decoration: underline;
 	}
 
-	/* PAGE ACCUEIL */
+	footer h1 {
+		font-family: 'intro_head_rbase';
+		display: inline-block;
+		width: 100%;
+		border-bottom:3px solid #fff;
+		text-transform: uppercase;
+	}
 
-	.vegas-wrapper {
+	footer h1 span {
+		font-family: 'intro_rust_gbase';
+	}
+
+	footer h1::before {
+		content: url(../images/logo-notext.png);
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	.containerMentionLegales {
+		margin-top:30px;
+		margin-bottom:30px;
+	}
+
+
+	/***** TITRES PAGES *****/
+
+.pageTitleHeaderFranchise {
+	background-image: url(../images/image_devenir_franchise.jpg);
+}
+
+.pageTitleAbout {
+	background-image: url(../images/01.jpg)
+}
+
+.pageTitleRestaurants {
+	background-image: url(../images/02.jpg)
+}
+
+.pageTitleContact {
+	background-image: url(../images/image_contact.jpg)
+}
+
+.pageTitleMentionsLegales {
+	background-image: url(../images/image_autrecontact.jpg)
+}
+
+/***** ACCUEIL *****/
+.slideshowBkg {
+	height: 100%;
+}
+
+.vegas-wrapper {
 		background-color: rgba(0,0,0,0.5);
+	}
+
+	.containerAccueil {
+		height:100%;
 	}
 
 	.punchline {
 		text-align: center;
 		color: #FFF;
+		position: relative;
+		top: 40%;
+		transform: translateY(-50%);
+	}
+
+	.pageTitleHeader {
+		text-align: center;
+		color: #FFF;
+		position: relative;
+		top: 15%;
+		transform: translateY(-50%);
+	}
+
+	.pageTitleHeader h2 {
+		font-family: 'intro_head_rbase';
+		font-size: 72px;
 	}
 
 	.punchline h2 {
@@ -398,22 +325,522 @@ h3 {
 		margin-top: 100px;
 		margin-bottom:100px;
 	}
+
+
+
+/***** FORMULAIRE DE CONTACT *****/
+.research{
+	background-color: #FFF;
+	height: auto;
 }
 
-/*JS*/
+.background-size{
+	width:100%;
+	padding:10px 40px 40px 40px;
+}
+
+.research img{
+	width:100%;
+}
+
+#intro{
+	text-align: center;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+.btn-form{
+	width: 100%;
+}
+
+.wrap{
+	width: 100%;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+.box{
+	font-size: 1.2em;
+	line-height: 1.6em;
+  text-align: center;
+}
+
+#confirmation-form{
+	display: none;
+	text-align: center;
+}
+
+.contact-form .input-block.error {
+	border-bottom: 2px solid #ff8500;
+}
+
+.error-container {
+	display: none;
+	color: #ff8500;
+}
+
+.contact-form {
+  width: 50%;
+  margin: 0 auto;
+}
+.contact-form .input-block {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  height: 60px;
+  border-bottom: 2px solid #1A1A1A;
+  margin: 0;
+  position: relative;
+  margin-bottom: 20px;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.contact-form .input-block.textarea {
+  height: auto;
+}
+.contact-form .input-block.textarea .form-control {
+  height: auto;
+  resize: none;
+}
+.contact-form .input-block label {
+  position: absolute;
+  left: 10px;
+  top: 25px;
+  display: block;
+  margin: 0;
+  font-weight: 400;
+  z-index: 1;
+  color: #aaa;
+  font-size: 18px;
+  line-height: 18px;
+}
+.contact-form .input-block .form-control {
+  background-color: transparent;
+  margin: 0;
+  border: none;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  height: auto;
+  padding: 30px 10px;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  font-size: 18px;
+}
+
+#form-container{
+	background-color:#e9f0f5;
+}
+
+/***** DEVENIR FRANCHISE *****/
+.circle {
+  background:#ffd578;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  border-radius: 100%;
+	margin-bottom: 20px;
+}
+
+.circle p{
+	text-align: center;
+  width: 200px;
+  height: 200px;
+	line-height: 200px;	
+}
+
+.circle p span{
+	width: 100px;
+	vertical-align: middle;
+	display: inline-block;
+	line-height: 1.2;
+	text-align: center;
+	font-size: 40px;
+}
+
+.circle .numbers{
+	font-size:20px;
+}
+
+.phrase-numbers-key{
+	text-align: center;
+	font-size: 18px;
+}
+
+.concept{
+	height: 100%;
+	width: 100% !important;
+	margin-top:50px;
+}
+
+.concept img{
+	width:100%;
+}
+
+.concept p{
+	padding: 20px;
+	text-align: justify; 
+}
+
+.concept h2{
+	padding-bottom: 20px;
+}
+
+.numbers-key{
+	margin-top:80px;
+}
+
+.our-services{
+	margin-bottom: 80px;
+}
+
+.our-services p{
+	padding:0px 20px 0px 20px;
+	text-align: justify; 
+}
+
+.our-services img{
+	width:100%;
+}
+
+.icon-bootstrap{
+	top:20px;
+	color:#ff8500;
+}
+
+.first-icon{
+	padding-top:30px;
+}
+
+.width-picture{
+	padding: 0px !important;
+}
+
+#paragraphe-concept{
+	text-align: center !important;
+}
+
+.btn-pages{
+    font-family: 'intro_head_rbase';
+    color: #FFF;
+    font-size: 24px;
+}
+
+
+/***** QUI SOMMES NOUS *****/
+.intro{
+	margin-top: 60px;
+	text-align: center;
+}
+
+.equipe img{
+	width:100%;
+}
+
+.equipe{
+	padding-top: 80px;
+	padding-bottom: 30px;
+}
+.all-equipe{
+	  background-color: #000;
+    background: url(../images/photo_equipe.jpg);
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.all-equipe .title-qui-sommes-nous{
+	color: #FFF;
+	text-align: center;
+	margin: 30px 0px 30px 0px;
+}
+
+.all-equipe p{
+	color: #fff;
+	font-size: 18px;
+	text-align: justify;
+	margin-bottom: 70px;
+}
+
+.filter{
+	  background-color: rgba(26,36,44,0.7);
+    height: 100%;
+}
+
+/***** QUI SOMMES NOUS - PORTRAITS *****/
+.portrait{
+		position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-size: cover;
+		margin: 0 auto;
+		margin-bottom: 40px;
+		box-shadow: 0 3px 0 #d7e4ed;
+}
+
+.portrait:hover{
+    transition: 0.5s;
+		background-size: cover;
+}
+
+.infos {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(26,36,44,0.7);
+	border-radius: 50%;
+	opacity: 0;
+	-webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.infos:hover {
+	opacity: 1;
+	-webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.text{
+	  position: absolute;
+    bottom: 10%;
+    width: 100%;
+		text-align: center;
+		overflow: hidden;
+		color: #fff;
+}
+
+.portrait.damien{
+	background-image: url(../images/damien.jpg);
+}
+
+.portrait.laurent{
+	background-image: url(../images/laurent.jpg);
+}
+
+.portrait.julien{
+	background-image: url(../images/julien.jpeg);
+}
+
+/***** NOS RESTAURANTS *****/
+	.mapRestaurants {
+		width: 100%;
+		height: 500px;
+		margin: 50px 0;
+	}
+
+		.nosRestaurantsIntro {
+		text-align: center;
+		margin-top: 50px;
+	}
+
+	#ficheClose {
+		font-size: 24px;
+		position: absolute;
+		top:15px;
+	}
+
+	.ficheRestaurant {
+		position: fixed;
+		padding: 10px;
+		z-index:5;
+		width: 100%;
+		height:50%;
+		background-color: white;
+		bottom: -50%;
+		left: 0;
+		overflow: auto;
+		-moz-box-shadow: 0px -5px 10px 0px #656565;
+		-webkit-box-shadow: 0px -5px 10px 0px #656565;
+		-o-box-shadow: 0px -5px 10px 0px #656565;
+		box-shadow: 0px -5px 10px 0px #656565;
+		filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=90, Strength=10);
+	}
+
+	.ficheRestaurant h3 {
+		text-align: right;
+		padding-bottom: 15px;
+		margin-top: 5px;
+		border-bottom: 2px solid #000;
+	}
+
+	.ficheRestaurant img {
+		width: 100%;
+	}
+
+	.opened {
+		bottom:0;
+	}
+	/*JS*/
 
 .smaller {
 	height: 65px;
+	background-color: #FFF;
+	background-image: url(../images/logo-header-white.png);
 	position: fixed;
 	margin-top:0;
 	left:0;
 	top:0;
 	line-height: 65px;
-	background-position: 0 -15px;
+	background-position: 0 -22px;
 	z-index:999;
 	-moz-box-shadow: 0px 5px 10px 0px #656565;
 	-webkit-box-shadow: 0px 5px 10px 0px #656565;
 	-o-box-shadow: 0px 5px 10px 0px #656565;
 	box-shadow: 0px 5px 10px 0px #656565;
 	filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=180, Strength=10);
+	transition-duration: 0.2s;
 	}
+
+/******************************************/
+/********** POUR LES TELEPHONES **********/
+/****************************************/
+
+@media screen and (max-width: 768px) {
+
+	/***** LAYOUT *****/
+.punchline h2 {
+	font-size: 60px;
+}
+
+
+	header {
+		background-color: rgba(255,255,255,0.9);
+		background-image: url(../images/logo-header.png);
+		background-repeat: no-repeat;
+		background-position: center 4px;
+		width: 100%;
+		height: 100px;
+		line-height: 100px;
+		margin-top: 30px;
+		padding:38px 35px;
+		position: relative;
+	}
+
+	nav {
+		float: right;
+		background-color:#292929;
+		color: #FFF;
+		position: fixed;
+		z-index: 999;
+		width: 100%;
+		height: 100%;
+		bottom:-1000px;
+		left:0;
+		text-align: center;
+	}
+
+		.linkToIndex {
+		left: 40%;
+	}
+
+	#navClose {
+		font-size: 30px;
+		position: absolute;
+		right:30px;
+		top:30px;
+		display: inherit;
+	}
+
+	nav ul {
+		padding: 0;
+	}
+
+	nav ul li {
+		font-family: 'intro_head_rbase';
+		text-align: center;
+		font-size:24px;
+		display: block;
+		width: inherit;
+	}
+
+	nav ul li a, nav ul li a:hover {
+		color: #FFF;
+		text-decoration: none;
+		font-family: 'intro_head_rbase';
+	}
+
+	nav ul li a#franchise {
+		color:#FF8500; 
+	}
+
+	nav img {
+		margin-top:75px;
+		margin-bottom: 30px;
+		display: inline-block;
+	}
+
+	.navOpen {
+		bottom:0;
+	}
+
+	#menuButton {
+		width: 40px;
+		height: 15px;
+		float: right;
+		display: block;
+	}
+
+	#menuButton div {
+		width: 100%;
+		height: 33%;
+		background-color: #000000;
+	}
+
+	#menuButton div + div {
+		margin: 5px 0;
+	}
+
+	.pageTitleHeader h2 {
+		font-size: 50px;
+	}
+
+
+	/***** FORMULAIRE DE CONTACT *****/
+  .contact-wrap {
+    margin: auto;
+		padding-bottom: 20px;
+  }
+	.contact-form{
+		width: 100%;
+	  padding: 10px;
+	}
+	.background-size{
+	width:100%;
+	padding:0px;
+	}
+
+	/***** DEVENIR FRANCHISE *****/
+	.circle-width{
+		width: 100% !important;
+	}
+
+	.concept p{
+		margin-top: 250px;
+	}
+
+	/***** QUI SOMMES NOUS *****/
+.all-equipe{
+		background-size:inherit;
+	}
+
+
+
+	.smaller {
+		padding-top:20px;
+	}
+}
+
+@media screen and (min-width: 970px) {
+	.newsletterForm input {
+		width:inherit;
+		margin-bottom: 15px;
+	}
+}

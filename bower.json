@@ -1,0 +1,23 @@
+{
+  "name": "Les_restaurants_atypiques",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Arthur Alloncle <arthuralloncle@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/laurianecollet/Les_restaurants_atypiques",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "gmaps": "^0.4.25",
+    "vegas": "^2.4.0",
+    "counter-up": "^1.0.0",
+    "vertical-timeline-codyhouse": "*"
+  }
+}
